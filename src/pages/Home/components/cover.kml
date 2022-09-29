@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="MTNN_5G_Coverage_Kano" id="MTNN_5G_Coverage_Kano">
+	<SimpleField name="icon" type="string"></SimpleField>
+</Schema>
+<Folder><name>MTNN_5G_Coverage_Kano</name>
+  <Placemark>
+	<name>MTNN 5G Coverage Kano</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#MTNN_5G_Coverage_Kano">
+		<SimpleData name="icon">files/MTNN_5G_Coverage_Kano.JPG</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>8.573738,12.033911 8.573738,11.953489 8.418082,11.953489 8.418082,12.033911 8.573738,12.033911</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+<Folder><name>MTNN_5G_Coverage_PH</name>
+  <Placemark>
+	<name>MTNN 5G Coverage PH</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#MTNN_5G_Coverage_PH">
+		<SimpleData name="icon">files/MTNN_5G_Coverage_PH.JPG</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>7.132581,4.913248 7.132581,4.765552 6.851959,4.765552 6.851959,4.913248 7.132581,4.913248</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+<Folder><name>MTNN_5G_Coverage_Owerri</name>
+  <Placemark>
+	<name>MTNN 5G Coverage Owerri</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#MTNN_5G_Coverage_Owerri">
+		<SimpleData name="icon">files/MTNN_5G_Coverage_Owerri.JPG</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>7.063285,5.496543 7.063285,5.464077 7.001535,5.464077 7.001535,5.496543 7.063285,5.496543</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+<Folder><name>MTNN_5G_Coverage_Abuja</name>
+  <Placemark>
+	<name>MTNN 5G Coverage Abuja</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#MTNN_5G_Coverage_Abuja">
+		<SimpleData name="icon">files/MTNN_5G_Coverage_Abuja.JPG</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>7.604629,9.169682 7.604629,8.929258 7.143711,8.929258 7.143711,9.169682 7.604629,9.169682</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+<Folder><name>MTNN_5G_Coverage_Map_Maiduguri</name>
+  <Placemark>
+	<name>MTNN 5G Coverage Map Maiduguri</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#MTNN_5G_Coverage_Map_Maiduguri">
+		<SimpleData name="icon">files/MTNN_5G_Coverage_Map_Maiduguri.JPG</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>13.211566,11.829582 13.211566,11.799218 13.152834,11.799218 13.152834,11.829582 13.211566,11.829582</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+<Folder><name>MTNN_5G_Coverage_Map_Ibadan</name>
+  <Placemark>
+	<name>MTNN 5G Coverage Map Ibadan</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#MTNN_5G_Coverage_Map_Ibadan">
+		<SimpleData name="icon">files/MTNN_5G_Coverage_Map_Ibadan.JPG</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>4.012945,7.461397 4.012945,7.330903 3.763815,7.330903 3.763815,7.461397 4.012945,7.461397</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+<Folder><name>MTNN_5G_Coverage_Lagos</name>
+  <Placemark>
+	<name>MapInfo Saved View</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#MTNN_5G_Coverage_Lagos">
+		<SimpleData name="icon">files/MTNN_5G_Coverage_0.JPG</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>3.703708,6.632179 3.703708,6.384721 3.232172,6.384721 3.232172,6.632179 3.703708,6.632179</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+<Schema name="MTNN_5G_Coverage_PH" id="MTNN_5G_Coverage_PH">
+	<SimpleField name="icon" type="string"></SimpleField>
+</Schema>
+<Schema name="MTNN_5G_Coverage_Owerri" id="MTNN_5G_Coverage_Owerri">
+	<SimpleField name="icon" type="string"></SimpleField>
+</Schema>
+<Schema name="MTNN_5G_Coverage_Abuja" id="MTNN_5G_Coverage_Abuja">
+	<SimpleField name="icon" type="string"></SimpleField>
+</Schema>
+<Schema name="MTNN_5G_Coverage_Map_Maiduguri" id="MTNN_5G_Coverage_Map_Maiduguri">
+	<SimpleField name="icon" type="string"></SimpleField>
+</Schema>
+<Schema name="MTNN_5G_Coverage_Map_Ibadan" id="MTNN_5G_Coverage_Map_Ibadan">
+	<SimpleField name="icon" type="string"></SimpleField>
+</Schema>
+<Schema name="MTNN_5G_Coverage_Lagos" id="MTNN_5G_Coverage_Lagos">
+	<SimpleField name="icon" type="string"></SimpleField>
+</Schema>
+</Document></kml>

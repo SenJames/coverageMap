@@ -1,0 +1,264 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.573738,
+              12.033911
+            ],
+            [
+              8.573738,
+              11.953489
+            ],
+            [
+              8.418082,
+              11.953489
+            ],
+            [
+              8.418082,
+              12.033911
+            ],
+            [
+              8.573738,
+              12.033911
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "MTNN 5G Coverage Kano",
+        "stroke": "#ff0000",
+        "stroke-opacity": 1,
+        "fill-opacity": 0,
+        "icon": "files/MTNN_5G_Coverage_Kano.JPG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.132581,
+              4.913248
+            ],
+            [
+              7.132581,
+              4.765552
+            ],
+            [
+              6.851959,
+              4.765552
+            ],
+            [
+              6.851959,
+              4.913248
+            ],
+            [
+              7.132581,
+              4.913248
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "MTNN 5G Coverage PH",
+        "stroke": "#ff0000",
+        "stroke-opacity": 1,
+        "fill-opacity": 0,
+        "icon": "files/MTNN_5G_Coverage_PH.JPG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.063285,
+              5.496543
+            ],
+            [
+              7.063285,
+              5.464077
+            ],
+            [
+              7.001535,
+              5.464077
+            ],
+            [
+              7.001535,
+              5.496543
+            ],
+            [
+              7.063285,
+              5.496543
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "MTNN 5G Coverage Owerri",
+        "stroke": "#ff0000",
+        "stroke-opacity": 1,
+        "fill-opacity": 0,
+        "icon": "files/MTNN_5G_Coverage_Owerri.JPG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.604629,
+              9.169682
+            ],
+            [
+              7.604629,
+              8.929258
+            ],
+            [
+              7.143711,
+              8.929258
+            ],
+            [
+              7.143711,
+              9.169682
+            ],
+            [
+              7.604629,
+              9.169682
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "MTNN 5G Coverage Abuja",
+        "stroke": "#ff0000",
+        "stroke-opacity": 1,
+        "fill-opacity": 0,
+        "icon": "files/MTNN_5G_Coverage_Abuja.JPG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.211566,
+              11.829582
+            ],
+            [
+              13.211566,
+              11.799218
+            ],
+            [
+              13.152834,
+              11.799218
+            ],
+            [
+              13.152834,
+              11.829582
+            ],
+            [
+              13.211566,
+              11.829582
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "MTNN 5G Coverage Map Maiduguri",
+        "stroke": "#ff0000",
+        "stroke-opacity": 1,
+        "fill-opacity": 0,
+        "icon": "files/MTNN_5G_Coverage_Map_Maiduguri.JPG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.012945,
+              7.461397
+            ],
+            [
+              4.012945,
+              7.330903
+            ],
+            [
+              3.763815,
+              7.330903
+            ],
+            [
+              3.763815,
+              7.461397
+            ],
+            [
+              4.012945,
+              7.461397
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "MTNN 5G Coverage Map Ibadan",
+        "stroke": "#ff0000",
+        "stroke-opacity": 1,
+        "fill-opacity": 0,
+        "icon": "files/MTNN_5G_Coverage_Map_Ibadan.JPG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.703708,
+              6.632179
+            ],
+            [
+              3.703708,
+              6.384721
+            ],
+            [
+              3.232172,
+              6.384721
+            ],
+            [
+              3.232172,
+              6.632179
+            ],
+            [
+              3.703708,
+              6.632179
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "MapInfo Saved View",
+        "stroke": "#ff0000",
+        "stroke-opacity": 1,
+        "fill-opacity": 0,
+        "icon": "files/MTNN_5G_Coverage_0.JPG"
+      }
+    }
+  ]
+}

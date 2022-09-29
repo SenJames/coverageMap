@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+    background-color: rgb(8, 5, 0);
+    border: 0;
+    padding: 0;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.Main{
+    background-color: #f7bd14;
+}
+
+.TopNav {
+    background-color: rgba(254,201,7,255);
+}
+
+
+
+.MainBody {}
+.lowerFooter {
+    
+}
+.footer {}
