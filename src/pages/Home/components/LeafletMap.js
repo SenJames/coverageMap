@@ -5,12 +5,14 @@ import { Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 // import KmlFile from './cover.kml'
 import { coordinates } from './Coordinates';
+import MyMarker from './MyMarker';
 
 
 
 
 const LeafletMap = (props) => {
     const [file, setfile] = useState();
+    const [seeMark, setSeeMark] = useState(true);
     // console.log(props);
     // useEffect(() => {
 
@@ -27,6 +29,13 @@ const LeafletMap = (props) => {
     //     }
     // }, [])
     /* {file && <ReactLeafletKml kml={file} />} */
+    // const zoomy = () => {
+    //     map.setView(
+    //         [props.lat, props.lng], 14
+    //     )
+    // }
+
+
 
 
 
@@ -47,7 +56,8 @@ const LeafletMap = (props) => {
 
             />
 
-            <Marker position={[props.lat, props.lng]} pa />
+            {/* <Marker position={[props.lat, props.lng]} /> */}
+            {props.lat !== 0 && <MyMarker lat={props.lat} lng={props.lng} />}
             {
                 coordinates.map((cord, index) => {
                     return (

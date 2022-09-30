@@ -12,6 +12,7 @@
     "global": "^4.4.0",
     "leaflet": "^1.9.1",
     "leaflet-kmz": "^1.0.8",
+    "netlify-cli": "^12.0.0",
     "opencage-api-client": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

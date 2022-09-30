@@ -13,31 +13,29 @@ import LeafletMap from './LeafletMap';
 const NewBody = () => {
     const [station, setStation] = useState({});
     const [location, setLocation] = useState("");
-    const [isLocating, setLocating] = useState(false);
-    const [lat, setLat] = useState(6.4500);
-    const [lng, setLng] = useState(3.4333);
+    const [lat, setLat] = useState(0);
+    const [lng, setLng] = useState(0);
 
 
     // fetch(`https://api.opencagedata.com/geocode/v1/json?q=URI-ENCODED-PLACENAME&key&pretty=1&key=${apiKey}`)
 
 
-    const handlelocation = (e) => {
-        // console.log(e.target.value);
-        let vals = e.target.value;
+    // const handlelocation = (e) => {
+    //     let vals = e.target.value;
 
-        if (vals.length >= 4) {
-            setLocation(e.target.value);
-        }
+    //     if (vals.length >= 4) {
+    //         setLocation(e.target.value);
+    //     }
 
-    }
+    // }
 
-    const handleOnclick = () => {
-        // e.preventDefault();
+    const handleOnSubmit = (e) => {
+        e.preventDefault();
         // let vals = e.target.value;
-        console.log("clicked")
-        if (location) {
+        if (location.length >= 3) {
             const urlLocate = encodeURIComponent(location);
             checkGeoCoder(urlLocate);
+            setLocation("");
         }
 
 
@@ -54,7 +52,7 @@ const NewBody = () => {
                 console.log(data)
                 const { lat, lng } = data["results"][0].geometry;
 
-                if (lat) {
+                if (lat !== 0) {
                     setLat(lat);
                     setLng(lng);
                 }
@@ -75,62 +73,68 @@ const NewBody = () => {
                 </button>
             </div>
             <div className='bodyCov'>
-                <p className='bodycaption'> Coverage Area </p>
-                <p>Check for our coverage area and shops at your location</p>
-            </div>
-            <div className='bodyLabels'>
-                <p style={{ fontWeight: 'bolder', textAlign: 'justify', fontSize: "0.5rem", paddingBottom: "20px" }}>Here's the network status and closest shops in {"{ }"}</p>
-                <div className='bodylabelIcons'>
-                    <div className='bodylabel1'>
-                        <p style={{ marginTop: "5px", paddingTop: "5px", paddingBottom: "5px", width: "30px", fontSize: "15px", fontWeight: 'bolder', backgroundColor: 'black', color: 'yellow', textAlign: 'center' }}>5G</p>
-                        <div className='bodylabelText'>
-                            <p>Good Indoors and Outdoors</p>
-                            <div className='bodylabelInsisdeIcon'>
-                                <MdOutlineNetworkWifi size={20} />
-                                <AiOutlineCheck size={20} />
+                <div style={{ paddingBottom: "10px", fontSize: "15px" }}>
+
+                    <h5 className='bodycaption'> Coverage Area </h5>
+                    <p >Check for our coverage area and shops at your location</p>
+                </div>
+
+                <div className='bodyLabels'>
+                    <p style={{ fontWeight: 'bolder', textAlign: 'justify', fontSize: "00.8rem", paddingBottom: "20px" }}>Here's the network status and closest shops in {"{ }"}</p>
+                    <div className='bodylabelIcons'>
+                        <div className='bodylabel1'>
+                            <p style={{ marginTop: "5px", paddingTop: "5px", paddingBottom: "5px", width: "30px", fontSize: "15px", fontWeight: 'bolder', backgroundColor: 'black', color: 'yellow', textAlign: 'center' }}>5G</p>
+                            <div className='bodylabelText'>
+                                <p>Good Indoors and Outdoors</p>
+                                <div className='bodylabelInsisdeIcon'>
+                                    <MdOutlineNetworkWifi size={20} />
+                                    <AiOutlineCheck size={20} />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='bodylabel2'>
-                        <p style={{ marginTop: "5px", paddingTop: "5px", paddingBottom: "5px", width: "30px", fontSize: "15px", fontWeight: 'bolder', backgroundColor: 'black', color: 'yellow', textAlign: 'center' }}>5G</p>
-                        <div className='bodylabelText'>
-                            <p>Good Indoors and Outdoors</p>
-                            <div className='bodylabelInsisdeIcon'>
-                                <MdOutlineNetworkWifi size={20} />
-                                <AiOutlineCheck size={20} />
+                        <div className='bodylabel2'>
+                            <p style={{ marginTop: "5px", paddingTop: "5px", paddingBottom: "5px", width: "30px", fontSize: "15px", fontWeight: 'bolder', backgroundColor: 'black', color: 'yellow', textAlign: 'center' }}>5G</p>
+                            <div className='bodylabelText'>
+                                <p>Good Indoors and Outdoors</p>
+                                <div className='bodylabelInsisdeIcon'>
+                                    <MdOutlineNetworkWifi size={20} />
+                                    <AiOutlineCheck size={20} />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='bodylabel3'>
-                        <p style={{ paddingTop: "5px", paddingBottom: "5px", width: "30px", fontSize: "15px", fontWeight: 'bolder', backgroundColor: 'black', color: 'yellow', textAlign: 'center' }}>5G</p>
-                        <div className='bodylabelText'>
-                            <p>Good Indoors and Outdoors</p>
-                            <div className='bodylabelInsisdeIcon'>
-                                <MdOutlineNetworkWifi size={20} />
-                                <AiOutlineCheck size={20} />
+                        <div className='bodylabel3'>
+                            <p style={{ paddingTop: "5px", paddingBottom: "5px", width: "30px", fontSize: "15px", fontWeight: 'bolder', backgroundColor: 'black', color: 'yellow', textAlign: 'center' }}>5G</p>
+                            <div className='bodylabelText'>
+                                <p>Good Indoors and Outdoors</p>
+                                <div className='bodylabelInsisdeIcon'>
+                                    <MdOutlineNetworkWifi size={20} />
+                                    <AiOutlineCheck size={20} />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='bodylabel4'>
-                        <p style={{ paddingTop: "5px", paddingBottom: "5px", width: "30px", fontSize: "15px", fontWeight: 'bolder', backgroundColor: 'black', color: 'yellow', textAlign: 'center' }}>5G</p>
-                        <div className='bodylabelText'>
-                            <p>Good Indoors and Outdoors</p>
-                            <div className='bodylabelInsisdeIcon'>
-                                <MdOutlineNetworkWifi size={20} />
-                                <AiOutlineCheck size={20} />
+                        <div className='bodylabel4'>
+                            <p style={{ paddingTop: "5px", paddingBottom: "5px", width: "30px", fontSize: "15px", fontWeight: 'bolder', backgroundColor: 'black', color: 'yellow', textAlign: 'center' }}>5G</p>
+                            <div className='bodylabelText'>
+                                <p>Good Indoors and Outdoors</p>
+                                <div className='bodylabelInsisdeIcon'>
+                                    <MdOutlineNetworkWifi size={20} />
+                                    <AiOutlineCheck size={20} />
+                                </div>
                             </div>
                         </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
                 </div>
             </div>
             <div className='bodyMap'>
                 <div className='controls'>
-                    <h3>CHECK HERE</h3>
-                    <input className={"controlsSearch"} type={"text"} onChange={handlelocation} onClick={handleOnclick} placeholder="Check your location here" />
-                    <button onClick={handleOnclick}>Click Here</button>
+                    <h5>CHECK HERE</h5>
+                    <form className="controlsInner" onSubmit={handleOnSubmit} >
+                        <input value={location} className={"controlsSearch"} type={"text"} onChange={(e) => setLocation(e.target.value)} placeholder="Check your location here" />
+                        <button type='submit' className={'controlsInnerBtn'}> Submit</button>
+                    </form>
                 </div>
                 <div className='map'>
                     <LeafletMap lat={lat} lng={lng} />
